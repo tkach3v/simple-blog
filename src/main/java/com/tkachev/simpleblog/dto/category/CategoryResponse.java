@@ -11,5 +11,6 @@ public class CategoryResponse implements Serializable {
     private String id;
     private String title;
     private String description;
+    private String imageUri;
     private List<ArticleResponse> articles;
 }

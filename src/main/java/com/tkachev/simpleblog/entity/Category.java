@@ -16,6 +16,7 @@ public class Category {
     private String id;
     private String title;
     private String description;
+    private String imageUri;
     @DBRef
     private List<Article> articles;
 

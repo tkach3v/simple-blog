@@ -15,5 +15,7 @@ public class UpdateCategoryRequest implements Serializable {
     private String title;
     @NotBlank
     private String description;
+    @NotBlank
+    private String imageUri;
     private List<ArticleResponse> articles;
 }
