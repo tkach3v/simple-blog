@@ -7,4 +7,5 @@ http://localhost:8080/api-docs
 UI version of docs available at:
 http://localhost:8080/swagger-ui.html
 
-Also you can use Postman collection
+Also you can use Postman collection:
+https://github.com/tkach3v/simple-blog/blob/main/simple-blog.postman_collection.json
