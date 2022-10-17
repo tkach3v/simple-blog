@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "3f409d13-07d5-4850-b0c4-2e820ed1d81b",
+		"name": "simple-blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10715400"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "createCategory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"articles\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/categories",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategoryById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/categories/634c1dda9ab63d3ed37a7ffd",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"634c1dda9ab63d3ed37a7ffd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/categories",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateCategory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"634c1e899ab63d3ed37a7ffe\",\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"articles\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/categories",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCategory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/categories/634c1dda9ab63d3ed37a7ffd",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								"634c1dda9ab63d3ed37a7ffd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "articles",
+			"item": [
+				{
+					"name": "createArticle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Смартфон Xiaomi Redmi Note 11 Pro 5G\",\r\n    \"description\": \"Xiaomi Redmi Note 11 Pro 5G оснащён 6,67-дюймовым AMOLED-дисплеем с разрешением Full HD+ и небольшим отверстием для 16-мегапиксельной фронталки вверху по центру. Частота обновления 120 Гц повышает плавность изображения, а за счёт ускоренной до 360 Гц частоты опроса сенсор быстро и безошибочно реагирует на касания. Такие характеристики порадуют любителей мобильного гейминга и могут дать преимущество в соревновательных играх.\",\r\n    \"status\": \"ACTIVE\",\r\n    \"categoryId\": \"634c1e899ab63d3ed37a7ffe\",\r\n    \"creationDate\": \"17.10.2022\",\r\n    \"tags\": [\r\n        \"xiaomi\",\r\n        \"phones\",\r\n        \"tech\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/articles?image",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getArticleById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/articles/634ce70aafc9cf64d0b4803d",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								"634ce70aafc9cf64d0b4803d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getArticles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/articles",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateArticle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"634c2300474cbc35413ddeea\",\r\n    \"title\": \"Article about new iPhone 14 Pro Max 256GB\",\r\n    \"description\": \"Смартфон Apple iPhone 14 Pro Max 256GB Deep Purple имеет обновленную камеру с 48-мегапиксельной матрицей. Объектив пропускает большое количество света. Благодаря этому фотографии получаются яркими даже при съемке глубокой ночью. Высокое разрешение модуля позволяет использовать основную камеру в качестве телеобъектива с двухкратным оптическим зумом. Умные алгоритмы оптимизации подбирают необходимый уровень контрастности, яркости и детализации изображения. Технология Action Mode исключает риск размытия кадров при съемке движущихся объектов. Для создания селфи в устройстве есть фронтальная камера TrueDepth.\",\r\n    \"status\": \"ACTIVE\",\r\n    \"imageUri\": \"http://localhost:8080/api/v1/images/iPhone-14-Pro-Max_large.png\",\r\n    \"categoryId\": \"634c1e899ab63d3ed37a7ffe\",\r\n    \"creationDate\": \"16.10.2022\",\r\n    \"tags\": [\r\n        \"iphone 14\",\r\n        \"phones\",\r\n        \"tech\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/articles",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteArticle",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/articles/634c2270de85040eb69c4676",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								"634c2270de85040eb69c4676"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "images",
+			"item": [
+				{
+					"name": "uploadImage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Pavel/Desktop/upgeadeSE.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/images",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "downloadImage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{simple-blog}}/api/v1/images/iPhone-14-Pro-Max_large.png",
+							"host": [
+								"{{simple-blog}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"images",
+								"iPhone-14-Pro-Max_large.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "simple-blog",
+			"value": "http://localhost:8080"
+		}
+	]
+}
