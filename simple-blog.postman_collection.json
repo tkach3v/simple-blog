@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"articles\": []\r\n}",
+							"raw": "{\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"imageUri\": \"http://localhost:8080/api/v1/images/phones.jpg\",\r\n    \"articles\": []\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -83,7 +83,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\": \"634c1e899ab63d3ed37a7ffe\",\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"articles\": []\r\n}",
+							"raw": "{\r\n    \"id\": \"634c1e899ab63d3ed37a7ffe\",\r\n    \"title\": \"phones\",\r\n    \"description\": \"articles about phones\",\r\n    \"imageUri\": \"http://localhost:8080/api/v1/images/phones.jpg\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
